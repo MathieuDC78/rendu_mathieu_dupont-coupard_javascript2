@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css"
+    />
+    <title>RenduJava</title>
+  </head>
+  <body>
+    <button id="theme">Mode nuit</button>
+    <div class="message-error">
+      <ul></ul>
+    </div>
+    <div class="message-success">
+      <h1>Votre formulaire </h1>
+    </div>
+    <form id="formulaire" novalidate>
+    <h1 class="big-title">Formulaire d'inscription portes ouvertes</h1>
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" />
+      </div>
+      <div>
+        <label for="pseudo">Prénom</label>
+        <input type="text" name="pseudo" id="pseudo" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <h2>Ma classe</h2>
+        <label for="radios"
+          >2nde :
+          <input type="radio" name="radios" id="radio1" value="radio1"
+        /></label>
+        <label for="radio1"
+          >1ère :
+          <input type="radio" name="radios" id="radio2" value="radio2"
+        /></label>
+        <label for="radio2"
+          >Terminale :
+          <input type="radio" name="radios" id="radio3" value="radio3"
+        /></label>
+      </div>
+      <div>
+        <label for="axe">Mon axe :</label>
+        <select name="axe" id="axe">
+          <option value="">Choisir mon axe</option>
+          <option value="axe1">Coding</option>
+          <option value="axe2">Marketing</option>
+          <option value="axe3">3D</option>
+          <option value="axe4">Créa</option>
+          <option value="axe5">JV</option>
+        </select>
+      </div>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+    <br />
+    <h1 class="big-title">Découvrez l'IIM</h1>
+    <div class="swipper mon-slider" id="mon-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="Images/photo1.jpg" alt="IIM" />
+        </div>
+        <div class="swiper-slide">
+          <img src="Images/photo2.jpg" alt="IIM2" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="Images/photo3.jpg" alt="I" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <main class="portfolio">
+        <h1 class="big-title">Mes informations</h1>
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">Toutes les infos</li>
+          <li data-filter="cv">Mon CV</li>
+          <li data-filter="ld">Mon Linkedin</li>
+          <li data-filter="rs">Mes Réseaux</li>
+        </ul>
+      </div>
+      <div class="portfolio-elements">
+        <div class="card filtr-item" data-category="cv">
+          <div class="card-header">
+            <p class="card-title">Mon CV</p>
+          </div>
+          <a href="Images/CV.png"
+            ><img src="Images/CV.png" alt="Motion" />
+          </a>
+        </div>
+        <div class="card filtr-item" data-category="ld">
+          <div class="card-header">
+            <p class="card-title">Mon Linkedin</p>
+          </div>
+          <a href="Images/Linkedin.png"
+            ><img src="Images/Linkedin.png" alt="Showreel" />
+          </a>
+        </div>
+        <div class="card filtr-item" data-category="rs">
+          <div class="card-header">
+            <p class="card-title">Mes Réseaux</p>
+          </div>
+          <a href="Images/reseaux.png"
+            ><img src="Images/reseaux.png" alt="Showreel" />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simplelightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
